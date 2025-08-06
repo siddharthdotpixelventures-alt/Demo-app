@@ -1,0 +1,36 @@
+/* Default (left-aligned) */
+.ql-editor p:not(.ql-align-center):not(.ql-align-right):not(.ql-align-justify) img {
+  display: block;
+  margin: 1rem 0;            /* top/bottom only */
+  margin-left: 0;            /* flush left */
+  margin-right: auto;
+}
+
+/* Centered */
+.ql-editor p.ql-align-center img {
+  display: block;
+  margin: 1rem auto;         /* auto left/right for centering */
+}
+
+/* Right-aligned */
+.ql-editor p.ql-align-right img {
+  display: block;
+  margin: 1rem 0 1rem auto;  /* auto left, flush right */
+}
+
+/* Justified—treat like left by default */
+.ql-editor p.ql-align-justify img {
+  display: block;
+  margin: 1rem 0;
+  margin-left: 0;
+  margin-right: auto;
+}
+
+/* Ensure images don’t overflow */
+.ql-editor img {
+  max-width: 100%;
+  height: auto;
+  width: 300px;              /* or whatever your preferred width */
+  object-fit: cover;
+  border-radius: 8px;
+}
