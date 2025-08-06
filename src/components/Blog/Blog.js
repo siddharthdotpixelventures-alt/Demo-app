@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './Blog.css';
 import '../../App.css';
+import FooterSection from "../FooterSection/FooterSection";
 
 const Blog = () => {
   const [posts, setPosts] = useState([]);
@@ -32,28 +33,35 @@ if (loading) return <div className="loader"></div>;
         <p className="blog-subtitle">
             Insights on digital wellness and breaking free from endless scrolling Brain
         </p>
-      {posts.map((post) => (
-        <div key={post.id} style={{ borderBottom: '1px solid #ccc', marginBottom: 20, paddingBottom: 10 }}>
-          <h2>{post.title}</h2>
-          <p>
-            <strong>{post.date}</strong> · {post.read_time} · By{' '}
-            <a href={post.author.url} target="_blank" rel="noreferrer">
-              {post.author.name}
-            </a>
-          </p>
-          <p><strong>Intro:</strong> {post.content.introduction}</p>
-          <div>
-            {post.content.main_sections.map((section, i) => (
-              <div key={i}>
-                <h4>{section.heading}</h4>
-                <p>{section.content}</p>
-              </div>
-            ))}
-          </div>
-          <p><strong>Conclusion:</strong> {post.content.conclusion}</p>
-          <p><strong>Tags:</strong> {post.tags.join(', ')}</p>
-        </div>
-      ))}
+
+<div className="blog-container">
+  {posts.map((post) => (
+    <div className="blog-card" key={post.id}>
+      <h3 className="blog-card-title">{post.title}</h3>
+
+      <div className="blog-card-meta">
+        <span className="date">{post.date}</span>
+        <span className="dot">•</span>
+        <span className="read-time">{post.read_time}</span>
+        <span className="details">by</span>
+        <img src="./images/yoni-smolyar.webp" alt={post.author.name} className="author-image" />
+        <span className="author-name">{post.author.name}</span>
+      </div>
+
+      <p className="blog-card-summary">
+        {post.content.introduction}
+      </p>
+      <button className="read-more-btn">
+  Read More →
+</button>
+
+    </div>
+  ))}
+</div>
+
+<div className="horizontal-line"></div>
+
+<FooterSection />
     </div>
   );
 };

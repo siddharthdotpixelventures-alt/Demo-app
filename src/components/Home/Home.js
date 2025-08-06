@@ -4,7 +4,7 @@ import StoreButton from "./StoreButton/StoreButton";
 import IphoneScreen from "./IphoneScreen/IphoneScreen";
 import TakeControl from "./TakeControl/TakeControl";
 import StopScrollSection from "./StopScrollSection/StopScrollSection";
-import FooterSection from "./FooterSection/FooterSection";
+import FooterSection from "../FooterSection/FooterSection";
 
 import { APP_STORE_URL, GOOGLE_PLAY_URL } from "../../constants/storeLinks";
 

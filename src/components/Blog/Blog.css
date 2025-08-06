@@ -10,4 +10,134 @@
   font-size: 1.2rem;
   font-weight: 400;
   margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+
+
+.blog-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center the cards horizontally */
+  gap: 20px;
+  padding: 20px;
+}
+
+.blog-card {
+  width: 70%; /* Or set a fixed width like 800px */
+  max-width: 800px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 20px;
+  background-color: #ffffff80;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.3s ease;
+}
+
+.blog-card:hover {
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  transform: translateY(-4px); /* Move card up slightly */
+  transition: all 0.3s ease;
+}
+
+
+.blog-card-title {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-top: 1.5rem;
+  margin-bottom: 8px;
+}
+
+.blog-card-title:hover {
+  color: #ff0000; /* red on hover */
+}
+
+.blog-card-summary {
+  color: #555;
+  line-height: 1.6;
+  overflow: hidden;
+  display: -webkit-box;
+  line-clamp: 2;
+  -webkit-line-clamp: 2; /* Show only 2 lines */
+  -webkit-box-orient: vertical;
+  margin-bottom: 0;
+}
+
+
+.blog-card-meta {
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+  color: #777;
+  
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.blog-card-meta  {
+  margin: 0 4px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.dot {
+  margin-left: 1rem;
+  margin-right: 0;
+}
+
+.read-time {
+  margin-left: 0;
+  margin-left: 6px;
+  font-weight: 500;
+}
+
+.author-image {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.date {
+  margin-left: 0px;
+  font-weight: 500;
+}
+
+.details {
+  margin-left: 6px;
+  font-weight: 500;
+}
+
+.author-name {
+  margin-left: 0px;
+  font-weight: 500;
+}
+
+.author-name:hover {
+  color: #ff0000;
+}
+
+.read-more-btn {
+  display: inline-block;
+  margin-top: 0;
+  padding: 0;
+  font-size: 0.95rem;
+  color: #d32f2f; /* Red color */
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+
+.read-more-btn:hover {
+  text-decoration: underline;
+}
+
+.horizontal-line {
+  width: 100%; /* Increase this as needed */
+  height: 0.5px;
+  background-color: #cccccc52;
+  border: none;
+  margin: 40px auto;
 }
