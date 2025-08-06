@@ -1,0 +1,52 @@
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px; /* top/bottom 40px, left/right 20px */
+  text-align: center;
+  box-sizing: border-box; /* ensures padding is included in width */
+  width: 100%;
+  max-width: 100%;
+}
+
+.center-image {
+  width: 120px;
+  height: 70px;
+  margin-bottom: 20px;
+}
+
+.black-text,
+.red-text {
+  word-wrap: break-word;     /* allow breaking long words */
+  overflow-wrap: break-word; /* modern equivalent */
+  white-space: normal;       /* allows wrapping */
+  max-width: 100%;
+}
+
+.black-text {
+  color: black;
+  font-size: clamp(2rem, 5vw, 3.5rem); /* Responsive font size */
+  font-weight: 900;
+  margin: 5px 0;
+}
+
+.red-text {
+  color: red;
+  font-size: clamp(2rem, 5vw, 3.5rem); /* Responsive font size */
+  font-weight: 700;
+  letter-spacing: -1px;
+  margin: 5px 0;
+}
+
+
+.button-container {
+  display: flex;
+  flex-direction: row; /* ← this is the key change */
+  gap: 16px;
+  margin-top: 20px;
+  align-items: center;
+  justify-content: center; /* optional: centers buttons horizontally */
+  flex-wrap: wrap; /* optional: stacks buttons on smaller screens */
+}
+
+

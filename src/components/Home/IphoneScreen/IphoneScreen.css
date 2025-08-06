@@ -1,0 +1,64 @@
+.phone-showcase {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4rem;
+  padding: 40px 0;
+  /* background-color: #f5f5f5; */
+}
+
+.iphone {
+  position: relative;
+  width: 280px;
+  height: 580px;
+  background-color: black;
+  border-radius: 50px;
+  padding: 11px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+/* Keyframe for smooth up-down floating */
+@keyframes floatUpDown {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
+/* Slower animation on hover */
+.iphone:hover {
+  animation: floatUpDown 3s infinite ease-in-out;
+}
+
+
+
+.iphone-notch {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 110px;
+  height: 25px;
+  background-color: black;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  z-index: 2;
+}
+
+.iphone-screen {
+  width: 100%;
+  height: 100%;
+  border-radius: 40px;
+  overflow: hidden;
+  background-color: #fff;
+  position: relative;
+  z-index: 1;
+}
+
+#app-demo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}

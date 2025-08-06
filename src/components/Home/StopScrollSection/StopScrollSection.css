@@ -1,0 +1,26 @@
+.final-section {
+  text-align: center;
+  margin: 120px 20px;
+}
+
+.final-big-text {
+  font-size: 2.2rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.final-small-text {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #666;
+  margin-bottom: 50px;
+  padding: 0 20px;
+}
+
+.horizontal-line {
+  width: 60%; /* Increase this as needed */
+  height: 0.5px;
+  background-color: #cccccc52;
+  border: none;
+  margin: 40px auto;
+}

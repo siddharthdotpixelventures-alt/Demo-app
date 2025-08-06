@@ -1,0 +1,68 @@
+.take-control-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  box-sizing: border-box;
+}
+
+.title-container {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.title-text {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.square-container {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.square-box {
+  width: 300px;
+  height: 260px;
+  background-color: #ffffff80;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.square-box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.square-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+}
+
+.square-icon {
+  font-size: 40px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.square-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.square-description {
+  font-size: 16px;
+  font-weight: 400;
+  color: #444;
+  margin: 15px 10px;
+}
