@@ -2,12 +2,12 @@ import React, { useEffect, useState } from 'react';
 import './Blog.css';
 import '../../App.css';
 import FooterSection from "../FooterSection/FooterSection";
-import { useLocation, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 const Blog = () => {
   const [posts, setPosts] = useState([]);
   const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
+  // const [error, setError] = useState(null);
   // const location = useLocation();
   const navigate = useNavigate();
 
@@ -37,7 +37,7 @@ const Blog = () => {
 
 
   if (loading) return <div className="loader"></div>;
-  if (error) return <p>Error: {error}</p>;
+  // if (error) return <p>Error: {error}</p>;
 
   return (
     <div>

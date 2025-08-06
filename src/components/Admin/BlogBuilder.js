@@ -1,7 +1,6 @@
 import React, { useState, useRef } from 'react';
 import ReactQuill from 'react-quill';
 import 'react-quill/dist/quill.snow.css';
-import Quill from 'quill';
 import './BlogBuilder.css'; // We'll define image style here
 
 const imageHandler = function () {
